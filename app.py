@@ -9,11 +9,11 @@ import numpy as np
 from flask import Flask, jsonify, request
 import pandas as pd
 
-model = joblib.load(r'/data/resys.model')
-pca = joblib.load(r'/data/pca.model')
-vectorizer = joblib.load(r'/data/vectorizer.model')
+model = joblib.load(r'resys.model')
+pca = joblib.load(r'pca.model')
+vectorizer = joblib.load(r'vectorizer.model')
 
-products = pd.read_json(r'/data/meta.json')
+products = pd.read_json(r'meta.json')
 products.meta.to_json(r'meta.json')
 products = pd.read_json(r'meta.json').T
 #antecedents 	consequents 	productid 	brand 	category 	subcategory 	name 	
