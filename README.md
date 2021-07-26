@@ -35,6 +35,27 @@ To use the API you have to provide the follwoing POST request
 'category':
 'subcategory':
 'name':
-} ```
-once you provided the schema you will receive list of top 10 items id with its confidence score 
+}
+```
+once you provided the schema you will receive list of top 10 items id with its confidence scores such as 
+```
+{'product names': array(['Palette Kalıcı Doğal Renkler 10-4 PAPATYA',
+        'Best Pet Jöle İçinde Parça Etli Somonlu Konserve Yetişkin Kedi Maması 415 gr',
+        'Türkiye Tarım Kredi Koop.Yeşil Mercimek 1 kg',
+        'Namet Fıstıklı Macar Salam 100 gr',
+        'Muratbey Burgu Peyniri 250 gr', 'Sek Quark Sade 140 g',
+        'Sırmakeş Doğal Kaynak Suyu 1,5 lt',
+        "Asil Fırın Gurme Cookie Çikolata 8'li",
+        'Granny Smith Elma 500 gr', 'Ekşi Mayalı Ekmek 1 Kg'], dtype=object),
+ 'scores': [array([['HBV00000AX6LR', 0.9581529657690381],
+         ['HBV00000BSAQG', 0.9581529657690381],
+         ['HBV00000JUHBA', 0.9581529657690381],
+         ['HBV00000NE0QI', 0.9581529657690381],
+         ['HBV00000NE0UQ', 0.9581529657690381],
+         ['HBV00000NE1NR', 0.9581529657690381],
+         ['HBV00000NH2LJ', 0.9581529657690381],
+         ['HBV00000NVZ7D', 0.9581529657690381],
+         ['HBV00000NVZCG', 0.9581529657690381],
+         ['HBV00000OEL9Q', 0.9581529657690381]], dtype=object)]}
+```
 
