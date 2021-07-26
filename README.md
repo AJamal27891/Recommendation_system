@@ -1,6 +1,7 @@
 # Recommendation_system
 ## Objective 
-The objective of this system to creat an API that will return the top 10 product recommended giving whats inside the cart
+The objective of this system to creat an API that will return the top 10 product recommended giving whats inside the cart This model achieves 96% of accuracy and 0.04 rmse for predicting the frequence confidence on the given dataset. 
+The frequency confidence is calculated using Fpgrowth Algorithm
 ----------------------------
 ### The Dataset 
 __Data provided by Hibsaborada Ecommerce for recommendation system splited into 2 data sources:__
@@ -26,3 +27,14 @@ After the training is complete we save the model to use it in our API.
 ____________________________
 ### Building The API 
 here we use Flask to build the API the API will take a product and matche it with all other products and return the top 10 confidence. 
+After running the application on the server
+To use the API you have to provide the follwoing POST request 
+```{
+'productid':
+'brand':
+'category':
+'subcategory':
+'name':
+} ```
+once you provided the schema you will receive list of top 10 items id with its confidence score 
+
