@@ -62,3 +62,11 @@ once you provided the schema you will receive a list of the top 10 items id with
          ['HBV00000NVZCG', 0.9581529657690381],
          ['HBV00000OEL9Q', 0.9581529657690381]], dtype=object)]}
 ```
+------------------------------------------
+## How this model can be improved (Future work)
+Due to the limited time that was given for this assignment also the simple data that was provided in this model is sufficient in terms of accuracy and the fast runtime. 
+The following methods can be changed in the future;
+- __TFIDF Vectorization__ this method is for features extracting it done its part to extract features from the textual data which consider a challenge for this study However there are more advanced algorithms and architectures that can be used for contextual extraction. 
+- __RandomForest regressor__ although the accuracy of this model is very good given the simple data provided however for longer data and textural data this model loses its accuracy for this case using deep learning models such as LSTM or pre-trained models such as Transformers based will give way better results. 
+- __Frequency patterns perdiction__ predicting the frequency patterns is my original idea of representing how often certain products will appear together in the same basket. Although this particular algorithm is fast and has a big(O) of n as it runs through the data only one time if the Bretrained model is used we will not need such algorithms and we will rely on semantic search instead of statistical approaches. 
+- __The API__ the API we build is very simple for future use it should have its database using MongoDB or SQL and secure login system using pycript, also the app will need more efficient error handling. 
