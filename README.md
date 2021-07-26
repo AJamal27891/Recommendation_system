@@ -1,7 +1,7 @@
 # Recommendation_system
 ## Objective 
 The objective of this system to creat an API that will return the top 10 product recommended giving whats inside the cart This model achieves 96% of accuracy and 0.04 rmse for predicting the frequence confidence on the given dataset. 
-The frequency confidence is calculated using Fpgrowth Algorithm
+The frequency confidence is calculated using Fpgrowth Algorithm and the predictor is RandomForest classifier.
 ----------------------------
 ### The Dataset 
 __Data provided by Hibsaborada Ecommerce for recommendation system splited into 2 data sources:__
