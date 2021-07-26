@@ -27,6 +27,10 @@ After the training is complete we save the model to use it in our API.
 ____________________________
 ### Building The API 
 here we use Flask to build the API the API will take a product and matche it with all other products and return the top 10 confidence. 
+Application instuction;
+- Create python/conda enviroment python==3.6x
+- ``` pip install -r requirements.txt```
+- ```python app.py```
 After running the application on the server
 To use the API you have to provide the follwoing POST request 
 ```{
